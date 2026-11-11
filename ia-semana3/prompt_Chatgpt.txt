@@ -1,0 +1,14 @@
+PROMPT A CHAT GPT:
+
+ Hola chat, Buenos dias. Estoy creando una pagina de autocine para un proyecto con Tailwind y necesito que me des un prompt muy especifico para indicarle a lovable que me haga la pagina. Debe incluir lo siguiente:
+
+    La cartelera de peliculas con su descripción, casting, género y la edad permitida para entrar y los horarios de la función.
+    Formulario de compra de tiquetes: este debe incluir pasarela de pagos (con diferentes medios de pago: PSE, tarjetas), opciones de espacios disponibles para el carro. Ten en cuenta que el lote permite un total de 80 carros y los precios de los tiquetes varían depende de la ubicación (3 precios diferentes)
+    La pagina de comida que ofrecemos con precios y combos.
+    Las locaciones de los autocines en el mapa.
+
+
+
+Debe tener encabezado, menú con links que redireccionen a las demás páginas, portada donde muestre los próximos estrenos, footer.
+
+Si deseas agregar algo que complemente primero consultanos y no cometas errores

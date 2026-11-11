@@ -1,0 +1,1 @@
+Link de pagina genera por lovable: https://monsters-moonlit-drive-in.lovable.app/menu

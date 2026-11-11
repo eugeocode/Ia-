@@ -1,0 +1,412 @@
+# PROYECTO: MONSTER'S CINEMA – PLATAFORMA WEB DE AUTOCINE
+
+Actúa como un desarrollador frontend senior y diseñador UI/UX especializado en plataformas de entretenimiento y comercio electrónico.
+
+Necesito desarrollar una página web completa para un negocio de autocine llamado **Monster's Cinema**, utilizando React y Tailwind CSS.
+
+El proyecto debe tener una apariencia profesional, atractiva, intuitiva y completamente responsive.
+
+IMPORTANTE: Este proyecto es exclusivamente frontend. No implementar backend, bases de datos externas ni pasarelas de pago reales. Las funcionalidades deben trabajar mediante datos simulados y estados locales.
+
+# 1. IDENTIDAD VISUAL Y DISEÑO
+
+Nombre: Monster's Cinema.
+
+Concepto: Autocine estadounidense de estilo retro, inspirado en los años 50 y 60.
+
+Estilo visual:
+- Diseño vintage cinematográfico.
+- Fondos oscuros combinados con rojo, amarillo mostaza y crema.
+- Elementos decorativos inspirados en los antiguos autocines estadounidenses.
+- Tipografías retro para títulos y tipografías modernas para textos.
+- Botones llamativos con efectos hover.
+- Ilustraciones y fotografías cinematográficas.
+- Letreros luminosos estilo marquesina.
+- Iconografía relacionada con películas, automóviles, palomitas y entretenimiento.
+
+Paleta sugerida:
+- Negro carbón: #171717.
+- Rojo vintage: #C62828.
+- Amarillo mostaza: #F4C542.
+- Crema: #FFF1D0.
+- Gris oscuro: #292929.
+
+Evitar una apariencia genérica de plantilla. La identidad visual debe mantenerse coherente en todas las páginas.
+
+# 2. ESTRUCTURA GENERAL
+
+Crear las siguientes páginas:
+
+1. Inicio.
+2. Cartelera.
+3. Comprar tiquetes.
+4. Menú de comidas.
+5. Ubicaciones.
+
+Todas deben tener navegación funcional mediante React Router.
+
+ENCABEZADO:
+- Logo de Monster's Cinema.
+- Menú de navegación.
+- Inicio.
+- Cartelera.
+- Comprar tiquetes.
+- Menú.
+- Ubicaciones.
+- Botón destacado "Comprar ahora".
+- Menú hamburguesa para dispositivos móviles.
+
+FOOTER:
+- Logo y descripción del autocine.
+- Enlaces a las diferentes páginas.
+- Información de contacto de ejemplo.
+- Redes sociales con enlaces visuales.
+- Horarios de atención de ejemplo.
+- Derechos reservados.
+- Políticas de privacidad y términos y condiciones.
+
+# 3. PÁGINA DE INICIO
+
+Crear una portada visualmente impactante.
+
+HERO PRINCIPAL:
+- Imagen de fondo de un autocine retro durante la noche.
+- Vehículos estacionados frente a una pantalla gigante.
+- Iluminación cinematográfica.
+- Título: "La magia del cine bajo las estrellas".
+- Subtítulo: "Vive una experiencia de película sin salir de tu automóvil".
+- Botón "Ver cartelera".
+- Botón "Comprar tiquetes".
+
+SECCIÓN: PRÓXIMOS ESTRENOS
+
+Mostrar tarjetas de películas que próximamente estarán disponibles.
+
+Cada tarjeta debe incluir:
+- Póster.
+- Nombre.
+- Fecha de estreno.
+- Género.
+- Clasificación por edades.
+- Botón "Ver detalles".
+
+SECCIÓN: NUESTRA EXPERIENCIA
+
+Mostrar tres características:
+- Cine desde tu vehículo.
+- Comida directamente para disfrutar durante la función.
+- Experiencia retro bajo las estrellas.
+
+SECCIÓN: NUESTRAS SEDES
+
+Mostrar tres tarjetas de las sedes de Monster's Cinema con fotografías representativas, dirección de ejemplo y botón "Ver ubicación".
+
+SECCIÓN: LLAMADO A LA ACCIÓN
+
+Texto: "¡Prepara tu vehículo, nosotros ponemos la película!"
+
+Botón para consultar la cartelera.
+
+# 4. PÁGINA DE CARTELERA
+
+Crear un catálogo de películas con información simulada.
+
+Cada película debe tener:
+- Póster.
+- Nombre.
+- Sinopsis o descripción.
+- Género.
+- Director.
+- Casting o reparto principal.
+- Duración.
+- Clasificación por edades.
+- Fecha de estreno.
+- Horarios disponibles.
+- Sedes donde se proyecta.
+
+Utilizar películas conocidas como datos de demostración.
+
+Incluir filtros por:
+- Género.
+- Clasificación por edades.
+- Fecha.
+- Sede.
+
+Incluir categorías:
+- En cartelera.
+- Próximamente.
+
+Al seleccionar una película, mostrar una ventana modal o página de detalles con toda su información.
+
+Agregar botón "Comprar tiquetes" que redireccione al formulario de compra y permita conservar la película seleccionada.
+
+IMPORTANTE:
+La clasificación por edades debe ser visible y clara. No permitir que el usuario confunda la clasificación de una película con una recomendación de edad.
+
+# 5. MÓDULO DE COMPRA DE TIQUETES
+
+Este es uno de los módulos más importantes del proyecto.
+
+Crear un proceso de compra dividido en pasos.
+
+PASO 1: SELECCIÓN DE FUNCIÓN
+
+Permitir seleccionar:
+- Película.
+- Sede.
+- Fecha.
+- Horario.
+
+Mostrar las funciones disponibles según la película y la sede seleccionadas.
+
+PASO 2: SELECCIÓN DEL ESPACIO PARA EL VEHÍCULO
+
+El autocine tiene una capacidad máxima de 80 vehículos por función.
+
+Crear una representación visual de un estacionamiento con 80 espacios distribuidos en tres zonas:
+
+ZONA VIP:
+Precio: $45.000 COP por vehículo.
+
+ZONA PREFERENCIAL:
+Precio: $35.000 COP por vehículo.
+
+ZONA GENERAL:
+Precio: $25.000 COP por vehículo.
+
+Representar los espacios mediante un mapa visual interactivo.
+
+Distribuir los 80 espacios entre las tres zonas.
+
+Cada espacio debe tener un identificador único:
+V01, V02, P01, P02, G01, G02, etc.
+
+Estados visuales:
+- Verde: disponible.
+- Rojo: ocupado.
+- Amarillo: seleccionado.
+- Gris: no disponible.
+
+Incluir una leyenda que explique los colores.
+
+Mostrar:
+- Cantidad de espacios disponibles.
+- Cantidad de espacios ocupados.
+- Zona seleccionada.
+- Precio correspondiente.
+
+REGLAS:
+- Solo se puede seleccionar un espacio por compra.
+- Cada vehículo ocupa un único espacio.
+- El precio se cobra por vehículo, independientemente de la cantidad de ocupantes.
+- No permitir seleccionar espacios ocupados.
+- No permitir seleccionar espacios de otra función.
+- La disponibilidad debe manejarse de manera independiente para cada función.
+- Al confirmar una reserva simulada, el espacio debe cambiar a ocupado.
+- Evitar que se seleccione dos veces el mismo espacio.
+- Incluir un botón para cambiar la selección.
+
+Agregar una representación de la pantalla gigante al frente del estacionamiento para que el usuario entienda la orientación de los espacios.
+
+PASO 3: DATOS DEL CLIENTE
+
+Crear formulario con:
+- Nombre completo.
+- Tipo de documento.
+- Número de documento.
+- Correo electrónico.
+- Número de celular.
+- Placa del vehículo.
+- Tipo de vehículo.
+- Cantidad de ocupantes.
+
+Validar los campos obligatorios.
+
+PASO 4: MÉTODO DE PAGO
+
+Crear una interfaz visual de selección de medios de pago.
+
+Opciones:
+
+1. PSE:
+   - Logo representativo.
+   - Selección de banco de ejemplo.
+   - Formulario visual.
+
+2. Tarjeta débito:
+   - Número de tarjeta.
+   - Fecha de vencimiento.
+   - CVV.
+
+3. Tarjeta crédito:
+   - Número de tarjeta.
+   - Fecha de vencimiento.
+   - CVV.
+
+IMPORTANTE:
+No integrar pagos reales. No almacenar información financiera sensible. Utilizar datos ficticios y una simulación visual del proceso.
+
+PASO 5: RESUMEN Y CONFIRMACIÓN
+
+Mostrar:
+- Película.
+- Fecha y hora.
+- Sede.
+- Espacio seleccionado.
+- Zona.
+- Datos del vehículo.
+- Precio del tiquete.
+
+El total debe corresponder al precio de la zona seleccionada.
+
+Mostrar un botón "Confirmar compra".
+
+Al confirmar:
+- Mostrar mensaje de compra exitosa simulada.
+- Generar un código de reserva aleatorio.
+- Mostrar los detalles de la reserva.
+- Mostrar un comprobante visual.
+- Actualizar el estado del espacio a ocupado.
+
+Agregar opción para imprimir el comprobante.
+
+# 6. PÁGINA DE COMIDAS Y BEBIDAS
+
+Crear un menú digital con diseño atractivo.
+
+Categorías:
+
+CRISPETAS:
+- Crispetas pequeñas.
+- Crispetas medianas.
+- Crispetas grandes.
+
+COMIDAS:
+- Perros calientes.
+- Hamburguesas.
+- Nachos con queso.
+- Papas fritas.
+
+BEBIDAS:
+- Gaseosas.
+- Agua.
+- Jugos.
+- Malteadas.
+
+COMBOS:
+- Combo clásico: crispetas medianas + dos gaseosas.
+- Combo pareja: crispetas grandes + dos bebidas + dos perros calientes.
+- Combo familiar: crispetas grandes + cuatro bebidas + cuatro perros calientes.
+
+Lovable debe proponer precios realistas en pesos colombianos.
+
+Cada producto debe incluir:
+- Fotografía.
+- Nombre.
+- Descripción.
+- Precio.
+- Botón agregar.
+
+Crear un carrito de compras visual que permita:
+- Agregar productos.
+- Eliminar productos.
+- Modificar cantidades.
+- Calcular subtotales.
+- Calcular el total.
+
+Mostrar el resumen de la orden.
+
+No implementar pagos reales.
+
+# 7. PÁGINA DE UBICACIONES
+
+Monster's Cinema cuenta con tres sedes ubicadas en la misma ciudad.
+
+Crear tres tarjetas de ubicación:
+
+SEDE 1: Monster's Cinema Norte.
+SEDE 2: Monster's Cinema Centro.
+SEDE 3: Monster's Cinema Sur.
+
+Utilizar direcciones ficticias claramente identificadas como demostrativas.
+
+Cada sede debe mostrar:
+- Nombre.
+- Dirección.
+- Fotografía.
+- Horarios de funcionamiento.
+- Información de contacto.
+- Botón "Cómo llegar".
+
+Incluir un mapa interactivo con las tres ubicaciones.
+
+Utilizar Leaflet y OpenStreetMap para representar las sedes.
+
+Los marcadores deben mostrar una ventana emergente con la información de cada sede.
+
+No inventar coordenadas reales ni presentar direcciones ficticias como ubicaciones reales.
+
+# 8. FUNCIONALIDADES GENERALES
+
+- Navegación funcional entre todas las páginas.
+- Diseño responsive.
+- Componentes reutilizables.
+- Formularios con validaciones.
+- Modales para información adicional.
+- Mensajes de confirmación.
+- Estados de carga visuales cuando corresponda.
+- Botones funcionales.
+- Carrito de comidas.
+- Selección interactiva de espacios.
+- Filtros de películas.
+- Cálculos automáticos de precios.
+- Uso de localStorage para conservar datos simulados cuando sea necesario.
+
+# 9. TECNOLOGÍAS
+
+Utilizar:
+- React.
+- Tailwind CSS.
+- React Router DOM.
+- Lucide React para iconos.
+- Leaflet y React Leaflet para mapas.
+- LocalStorage para persistencia frontend.
+
+Organizar el proyecto mediante componentes reutilizables.
+
+Separar:
+- Páginas.
+- Componentes.
+- Datos de demostración.
+- Estilos.
+- Funciones auxiliares.
+
+# 10. REQUISITOS IMPORTANTES
+
+1. No desarrollar backend.
+2. No utilizar bases de datos externas.
+3. No implementar pasarelas de pago reales.
+4. No utilizar información ficticia como si fuera información real.
+5. No dejar botones sin funcionalidad.
+6. No utilizar enlaces que no conduzcan a ninguna parte.
+7. No permitir reservas duplicadas del mismo espacio para una misma función.
+8. Mantener los precios en pesos colombianos.
+9. Los precios de los tiquetes son por vehículo, no por persona.
+10. La capacidad máxima es de 80 vehículos por función.
+11. La disponibilidad debe ser independiente entre las tres sedes y las diferentes funciones.
+12. Mantener una identidad gráfica retro consistente.
+
+# 11. RESULTADO ESPERADO
+
+Entregar una plataforma web completa, visualmente atractiva y funcional para Monster's Cinema.
+
+Debe parecer un negocio real de autocine, con una experiencia de navegación intuitiva y un proceso de compra sencillo.
+
+Priorizar especialmente:
+- La calidad visual de la página de inicio.
+- La presentación de la cartelera.
+- El mapa interactivo de los 80 espacios.
+- La experiencia de compra de tiquetes.
+- La identidad visual retro.
+
+Antes de finalizar, verificar que todas las páginas estén conectadas, que los botones funcionen y que los cálculos de precios y disponibilidad sean correctos.
